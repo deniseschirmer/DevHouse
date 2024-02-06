@@ -28,5 +28,7 @@ routes.get("/dashboard", DashboardController.show);
 
 // Rota de Reserva
 routes.post("/houses/:houseId/reserve", ReserveController.store);
+routes.get("/reserves", ReserveController.index);
+routes.delete("/reserves/cancel", ReserveController.destroy);
 
 export default routes;
